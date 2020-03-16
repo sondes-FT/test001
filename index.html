@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .content {
+            display: flex;
+        }
+
+        .content>div {
+            width: 250px;
+            text-align: center;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            .green {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .red {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>objectif:</h1>
+    <div class="content">
+        <div class="black" style="flex-shrink: 0">Visible on all (fix width)</div>
+        <div class="green" style="flex-grow: 1">Hidden only on sm</div>
+        <div class="red" style="flex-grow: 1">Hidden only on lg</div>
+    </div>
+
+    <h1># ADD BOOTSTRAP CLASS ONLY:</h1> <!-- ADD BOOTSTRAP CLASS ONLY-->
+    <div>
+        <div style="width: 250px; background-color: black;">Visible on all (fix width)</div>
+        <div style="background-color: green;">Hidden only on sm</div>
+        <div style="background-color: red;">Hidden only on lg</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
